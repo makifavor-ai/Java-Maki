@@ -1,0 +1,109 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #FF8C7A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Hiragino Maru Gothic ProN', 'Rounded Mplus 1c', sans-serif;
+}
+
+.container {
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px 32px;
+  max-width: 680px;
+  width: 100%;
+  text-align: center;
+}
+
+.page-title { font-size: 22px; color: #d95c5c; margin-bottom: 4px; }
+.page-description { font-size: 13px; color: #f0a090; margin-bottom: 20px; }
+
+.main-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.battle-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.character-box {
+  background: #fff5f3;
+  border: 2px solid #f7ccc4;
+  border-radius: 16px;
+  width: 120px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.char-emoji { font-size: 48px; margin: 8px 0; }
+.char-name  { font-size: 12px; color: #d95c5c; font-weight: bold; }
+.hand-label { font-size: 11px; color: #f0a090; min-height: 16px; }
+.vs-text    { font-size: 20px; font-weight: 900; color: #FF8C7A; }
+
+.control-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.score-row { display: flex; gap: 10px; }
+
+.score-box {
+  background: #fff5f3;
+  border: 2px solid #f7ccc4;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #d95c5c;
+  font-weight: bold;
+  min-width: 80px;
+}
+
+.score-box span { font-size: 26px; display: block; }
+
+.choose-label { font-size: 13px; color: #d95c5c; font-weight: bold; }
+
+.hand-buttons { display: flex; gap: 8px; }
+
+.hand-btn {
+  background: #fff5f3;
+  border: 2px solid #f7ccc4;
+  border-radius: 14px;
+  width: 62px;
+  height: 62px;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.hand-btn:hover { background: #ffe0da; border-color: #f09080; }
+
+.reset-btn {
+  border: 2px dashed #f7ccc4;
+  background: none;
+  color: #f0a090;
+  border-radius: 10px;
+  padding: 5px 16px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.result-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 16px;
+  min-height: 36px;
+}
